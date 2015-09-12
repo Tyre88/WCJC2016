@@ -1,0 +1,11 @@
+<form>
+    <formly-form model="Form" fields="Fields" form="form">
+        <formly-form ng-repeat="participant in Form.Participants" model="participant" fields="ParticipantFields"></formly-form>
+
+        <div class="col-md-12 submit-buttons">
+            <span class="btn btn-default" ng-click="AddParticipant()">Lägg till deltagare</span>
+
+            <button type="submit" class="btn btn-primary" ng-click="SubmitForm()">Skicka in</button>
+        </div>
+    </formly-form>
+</form>

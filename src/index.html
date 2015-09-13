@@ -3,16 +3,24 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <link rel="stylesheet" href="dependencies/bootstrap/dist/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="content/css/stylesheet.css"/>
     </head>
     <body ng-controller="index">
         <div class="container">
-            <img src="content/images/logo.jpg" alt=""/>
+            <div class="header">
+                <div class="translations">
+                    <span class="btn btn-sm btn-default" ng-class="{'btn-primary': ActiveLang == 'sv'}" ui-sref="home">Sv</span>
+                    <span class="btn btn-sm btn-default" ng-class="{'btn-primary': ActiveLang == 'en'}" ui-sref="en">En</span>
+                </div>
+                <img src="content/images/logo.jpg" alt=""/>
+                <span>WCJC</span>
+                World class judo camp
+            </div>
+
             <div ui-view></div>
         </div>
     </body>
     <script src="dependencyconfig.js"></script>
     <script src="dependencies/requirejs/require.js" data-main="bootstrap.js"></script>
-
-    <link rel="stylesheet" href="dependencies/bootstrap/dist/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="content/css/stylesheet.css"/>
 </html>

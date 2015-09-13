@@ -83,6 +83,11 @@ module.exports = function (grunt)
 				files: ["<%= config.src %>/**/*.css"],
 				tasks: ["newer:copy:css"]
 			},
+			json:
+			{
+				files: ["<%= config.src %>/**/*.json"],
+				tasks: ["newer:copy:json"]
+			},
 			sass:
 			{
 				files: ["<%= config.src %>/**/*.scss"],
@@ -207,6 +212,18 @@ module.exports = function (grunt)
 						dest: "<%= config.dist %>"
 					}
 				]
+			},
+			json:
+			{
+				files:
+					[
+						{
+							expand: true,
+							cwd: "<%= config.src %>",
+							src: "**/*.json",
+							dest: "<%= config.dist %>"
+						}
+					]
 			},
 			images:
 			{

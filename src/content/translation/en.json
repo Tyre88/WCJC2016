@@ -1,0 +1,23 @@
+{
+  "ContactPerson": "Contact person",
+  "Coaches": "Coaches",
+  "Phone": "Phone number",
+  "Email": "E-mail",
+  "Club": "Club",
+  "OtherInformation": "Other information to the organizers",
+  "Add": "Add participant",
+  "Submit": "Send",
+  "FirstName": "First name",
+  "LastName": "Last name",
+  "BirthYear": "Birth year",
+  "Grade": "Grade",
+  "BusRide": "Riding the bus?",
+  "TrainingClass": "Training class",
+  "Allergic": "Allergy?",
+  "SleepOver": "Overnight in the classroom?",
+  "No": "No",
+  "Competition": "Competitor",
+  "Trainer": "Trainer",
+  "Exerciser": "Excerciser",
+  "Child": "Child"
+}

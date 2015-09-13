@@ -16,7 +16,13 @@ define(
                             url: "/",
                             templateUrl: "views/home.html",
                             controller: "home"
-                        });
+                        })
+						.state('en',
+						{
+							url: "/en",
+							templateUrl: "views/home.html",
+							controller: "home"
+						});
                 }
 			]
         );

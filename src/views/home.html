@@ -3,9 +3,9 @@
         <formly-form ng-repeat="participant in Form.Participants" model="participant" fields="ParticipantFields"></formly-form>
 
         <div class="col-md-12 submit-buttons">
-            <span class="btn btn-default" ng-click="AddParticipant()">Lägg till deltagare</span>
+            <span class="btn btn-default" ng-click="AddParticipant()">{{Translations.Add}}</span>
 
-            <button type="submit" class="btn btn-primary" ng-click="SubmitForm()">Skicka in</button>
+            <button type="submit" class="btn btn-primary" ng-click="SubmitForm()">{{Translations.Submit}}</button>
         </div>
     </formly-form>
 </form>

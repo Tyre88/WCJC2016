@@ -1,0 +1,23 @@
+{
+  "ContactPerson": "Kontakt person",
+  "Coaches": "Coach(er)",
+  "Phone": "Telefon nummer",
+  "Email": "E-post",
+  "Club": "Klubb",
+  "OtherInformation": "Övrig information till arrangörer",
+  "Add": "Lägg till deltagare",
+  "Submit": "Skicka in",
+  "FirstName": "Förnamn",
+  "LastName": "Efternamn",
+  "BirthYear": "Födelseår",
+  "Grade": "Grad",
+  "BusRide": "Åker buss?",
+  "TrainingClass": "Träningsklass",
+  "Allergic": "Allergi?",
+  "SleepOver": "Övernattning i skolsal?",
+  "No": "Nej",
+  "Competition": "Tävling",
+  "Trainer": "Tränare",
+  "Exerciser": "Motionär",
+  "Child": "Barn"
+}

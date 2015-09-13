@@ -29,7 +29,6 @@ define(
 						translationService.GetTranslations(lang).success(function(response) {
 							$rootScope.Translations = response;
 							$rootScope.ActiveLang = lang;
-							console.log($rootScope.Translations);
 
 							deferred.resolve();
 						}).error(function() {

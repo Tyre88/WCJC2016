@@ -22,6 +22,13 @@ module.exports = function (grunt)
 	  //"uglify"
 	]);
 
+	grunt.registerTask("release",
+	[
+		"build",
+		"htmlmin",
+		"uglify"
+	]);
+
 	grunt.registerTask("default",
 	[
 		"server"
@@ -151,9 +158,11 @@ module.exports = function (grunt)
 				[
 					{
 						expand: true,
-						cwd: "<%= config.dist %>",
-						src: "**/*.js",
-						dest: "<%= config.dist %>"
+						cwd: "<%= config.src %>",
+						src: ["bootstrap.js", "dependencyconfig.js", "routing.js", "controllers/*.js"],
+						dest: "<%= config.dist %>",
+						ext: ".js",
+						flatten: false
 					}
 				]
 			}

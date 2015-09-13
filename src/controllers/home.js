@@ -191,6 +191,11 @@ define(
 										"name": "5dan",
 										"group": "Dan",
 										"value": 10
+									},
+									{
+										"name": "6dan",
+										"group": "Dan",
+										"value": 11
 									}
 								]
 							}

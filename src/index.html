@@ -13,9 +13,16 @@
                     <span class="btn btn-sm btn-default" ng-class="{'btn-primary': ActiveLang == 'sv'}" ui-sref="home">Sv</span>
                     <span class="btn btn-sm btn-default" ng-class="{'btn-primary': ActiveLang == 'en'}" ui-sref="en">En</span>
                 </div>
-                <img src="content/images/logo.jpg" alt=""/>
-                <span>WCJC</span>
-                World class judo camp
+                <div class="header-container">
+                    <div class="header-images">
+                        <img src="content/images/logo.jpg" class="wbf" alt="WBF"/>
+                        <img src="content/images/logo-judo-syd.jpg" class="judo-syd" alt="Judo Syd"/>
+                    </div>
+                    <div class="header-text">
+                        <span>WCJC</span>
+                        World class judo camp
+                    </div>
+                </div>
             </div>
 
             <div ui-view></div>

@@ -28,17 +28,50 @@ $base-font-size: 20px;
     right: em(10px);
   }
 
-  > img
+  .header-container
   {
-    max-height: em(200px);
+    display: flex;
+    flex-direction: row;
+    @media all and (max-width: 980px) {
+      flex-direction: column-reverse;
+    }
   }
 
-  > span
+  .header-images > img
   {
-    font-size: em(72px);
+    height: em(200px);
+
+    &.judo-syd
+    {
+      height: em(160px);
+      @media all and (max-width: 980px) {
+        height: auto;
+        max-width: 45%;
+      }
+    }
 
     @media all and (max-width: 980px) {
-      display: block;
+      max-width: 50%;
+      display: inline-block;
+      height: auto;
+    }
+  }
+
+  .header-text
+  {
+    height: em(200px);
+    line-height: em(200px);
+    @media all and (max-width: 980px) {
+      height: auto;
+      line-height: inherit;
+    }
+    > span
+    {
+      font-size: em(72px);
+
+      @media all and (max-width: 980px) {
+        display: block;
+      }
     }
   }
 }

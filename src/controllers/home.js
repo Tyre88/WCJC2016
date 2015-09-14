@@ -22,9 +22,15 @@ define(
 			return participantFactory;
 		});
 
+		app.service('formService', function($http) {
+			this.SubmitForm = function(form) {
+				return $http.post('http://localhost:51365/api/Home/SubmitForm/', form);
+			};
+		});
+
 		app.controller('home',
-			["$scope", "$rootScope", "$state", "participantFactory",
-				function($scope, $rootScope, $state, participantFactory)
+			["$scope", "$rootScope", "$state", "participantFactory", "formService",
+				function($scope, $rootScope, $state, participantFactory, formService)
 			{
 				if($state.current.name == "home")
 					$rootScope.ActiveLang = 'sv';
@@ -283,7 +289,10 @@ define(
 
 				$scope.SubmitForm = function() {
 					if ($scope.form.$valid) {
-						console.log(JSON.stringify($scope.Form), null, 2);
+						formService.SubmitForm($scope.Form).success(function(response) {
+							console.log(response);
+						});
+
 					}
 				};
 			}]);

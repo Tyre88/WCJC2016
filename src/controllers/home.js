@@ -24,7 +24,7 @@ define(
 
 		app.service('formService', function($http) {
 			this.SubmitForm = function(form) {
-				return $http.post('http://localhost:51365/api/Home/SubmitForm/', form);
+				return $http.post('http://wcjc2016.gradera.nu/api/Home/SubmitForm/', form);
 			};
 		});
 
@@ -291,10 +291,15 @@ define(
 					if ($scope.form.$valid) {
 						formService.SubmitForm($scope.Form).success(function(response) {
 							console.log(response);
+							$state.go("thanks");
 						});
 
 					}
 				};
 			}]);
+
+		app.controller('thanks', function() {
+
+		});
 	}
 );

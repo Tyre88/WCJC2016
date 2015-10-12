@@ -22,6 +22,12 @@ define(
 							url: "/en",
 							templateUrl: "views/home.html",
 							controller: "home"
+						})
+						.state('thanks',
+						{
+							url: "/thanks",
+							templateUrl: "views/thanks.html",
+							controller: "thanks"
 						});
                 }
 			]
